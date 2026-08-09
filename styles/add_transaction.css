@@ -1,0 +1,113 @@
+
+#transactionForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgb(32, 31, 31);
+  border-radius: 10px;
+}
+
+input, select, #submitBtn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#submitBtn {
+  background: #17D14E;
+  color: #fff;
+}
+
+.success-msg-container {
+  position: fixed;
+  background: #AECB16;
+  border-radius: 5px;
+  padding: 10px;
+  top: 100px;
+  right: 40px;
+  display: none;
+}
+
+.success-chk-emoji {
+  float: left;
+  padding: 3px;
+  font-size: 1.3em;
+  background: #2ACB16;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.error-msg-container {
+  position: fixed;
+  background: #F0410C;
+  border-radius: 5px;
+  padding: 10px;
+  top: 100px;
+  right: 40px;
+  display: none;
+}
+
+.error-chk-emoji {
+  float: left;
+  padding: 3px;
+  font-size: 1.3em;
+  background: #CB1616;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.hide-msg {
+  animation: 1.5s hide linear;
+  display: block;
+}
+
+.show-msg {
+  animation: 1.5s show linear;
+  display: block;
+}
+
+@keyframes hide{
+  from {
+    right: 40px;
+  }
+  
+  to {
+    right: -500px;
+  }
+}
+
+ @keyframes show{
+  from {
+    right: -500px;
+  }
+  
+  to {
+    right: 40px;
+  }
+}
+
+
+@media ( min-width: 760px) {
+  
+  .transaction-form {
+    width: 50%;
+    margin-left: 35%;
+    
+    padding: 20px;
+    border-radius: 10px;
+  }
+}

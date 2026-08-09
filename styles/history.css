@@ -1,0 +1,96 @@
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.all-transactions {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.transactions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px #444;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.edit {
+  background: #1C9F0F;
+  color: white;
+  font-size: 17px;
+  padding: 4px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.delete {
+  background: #C72323;
+  color: white;
+  font-size: 17px;
+  padding: 4px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+  section.transaction-form {
+    z-index: 1;
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    display: none;
+  }
+
+  #transactionForm {
+    border-radius: 10px;
+  }
+
+  section.display {
+    display: block;
+  }
+
+  #remove {
+    position: absolute;
+    right: 20px;
+    top: 90px;
+  }
+
+
+@media (min-width: 780px) {
+  
+  #transactionForm {
+    width: 50%;
+    margin: 0 0 0 20px;
+    box-shadow: 2px 2px 8px rgb(32, 31, 31);
+    padding: 20px;
+    border-radius: 10px;
+  }
+ 
+}
+
