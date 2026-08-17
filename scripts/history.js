@@ -10,7 +10,7 @@ function renderHistory(data = transactions) {
 
     let ClassName = transaction.type === 'income' ? 'incomeType' : 'expensesType';
   transactionsHtml += `
-    <li class="transactions transactions-${transaction.id}">
+    <li class="transactions ${ClassName}">
       <div class="transaction">
           <strong>${transaction.name}</strong><br> ${transaction.category}<br> ${transaction.date}
       </div>
