@@ -110,9 +110,11 @@ function display() {
     if (i === 3) {
       break
     }
+
+    let ClassName = transactions[i].type === 'income' ? 'incomeType' : 'expensesType';
     
     transactionHtml += `
-      <li class="transactions transactions-${transactions[i].id}">
+      <li class="transactions ${ClassName}">
         <div class="transaction">
           <strong>${transactions[i].name}</strong><br> ${transactions[i].category} <br> ${transactions[i].date}
         </div>
