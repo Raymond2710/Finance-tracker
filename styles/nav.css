@@ -96,6 +96,14 @@ body.dark .progress-bar {
   border-bottom: 3px solid #11ECD5;
 }
 
+.incomeType {
+  border-left: 5px solid #56C738;
+}
+
+.expensesType {
+  border-left: 5px solid #BD462D;
+}
+
 @media (min-width: 760px) {
     .content {
       width: 50%;
