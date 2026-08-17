@@ -7,7 +7,8 @@ function renderHistory(data = transactions) {
   
   let transactionsHtml = ''
   data.forEach(transaction => {
-  
+
+    let ClassName = transaction.type === 'income' ? 'incomeType' : 'expensesType';
   transactionsHtml += `
     <li class="transactions transactions-${transaction.id}">
       <div class="transaction">
